@@ -20,7 +20,7 @@ jobs:
           protocol: ftps
           port: 21
           local-dir: ./
-          server-dir: ./abrahamn10.sg-host.com/
+          server-dir: ./abrahamn10.sg-host.com/public_html/
           exclude: |
             **/.git*
             **/.git*/**
