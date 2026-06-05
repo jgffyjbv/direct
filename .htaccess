@@ -1,0 +1,31 @@
+# Enable RewriteEngine
+RewriteEngine On
+
+# SEO-friendly route pages: /bookings/monsey-to-montreal-qc -> route.php?route=monsey-to-montreal-qc
+RewriteRule ^bookings/([a-zA-Z0-9-]+)/?$ route.php?route=$1 [L,QSA]
+
+# Admin page - allow /admin to serve admin.php
+RewriteRule ^admin$ admin.php [L]
+
+# Remove .html extension
+# If the request doesn't have .html and the .html file exists, serve it
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
+# Handle .php files without extension
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php [L]
+
+# Redirect .html URLs to clean URLs (optional - removes .html from URL bar)
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ /%1 [NC,L,R=301]
+
+# Set index.php as default directory index (index.php loads routes dynamically)
+DirectoryIndex index.php index.html
+
+# Prevent directory listing
+Options -Indexes

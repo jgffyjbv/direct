@@ -1,0 +1,31 @@
+# Sensitive config (keys, SMTP creds)
+config/config.php
+config/email-config.php
+
+# Customer data — never commit
+bookings/
+bookings.log
+
+# Runtime logs
+*.log
+email_debug.log
+php_errors.log
+
+# Routes auto-backups (admin.php writes these on every save — flooding repo)
+routes_backup_*.json
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
+
+# Local backups of HTML files
+*.bak
+*.bak2
+*.old
+*.backup_*
+
+# Empty placeholder
+public_html/

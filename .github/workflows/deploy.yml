@@ -25,3 +25,8 @@ jobs:
             **/.git*
             **/.git*/**
             **/.github/**
+            # Never touch live customer booking records or server-only config on deploy
+            bookings/**
+            config/config.php
+            config/email-config.php
+            **/*.log
