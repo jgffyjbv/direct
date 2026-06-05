@@ -1,0 +1,23 @@
+# Place this file inside the /bookings/ folder, named exactly:  .htaccess
+#
+# It blocks the public web from DOWNLOADING the stored booking data files,
+# while PHP can still read/write them normally (this only affects web URLs,
+# NOT the folder's write permissions - new bookings keep saving fine).
+#
+# IMPORTANT: the public route landing pages (e.g. /bookings/monsey-to-monticello-ny,
+# which have NO file extension) are NOT affected and keep working.
+
+# Block direct web access to stored booking records and any log files
+<FilesMatch "\.(json|log)$">
+    Require all denied
+</FilesMatch>
+
+# Turn off directory listing so the folder contents cannot be browsed
+Options -Indexes
+
+# --- If the above causes a 500 error (older Apache 2.2), use this instead: ---
+# <FilesMatch "\.(json|log)$">
+#     Order deny,allow
+#     Deny from all
+# </FilesMatch>
+# Options -Indexes
