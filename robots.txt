@@ -1,0 +1,46 @@
+# robots.txt for Direct Car Service - directcsny.com
+# https://directcsny.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://directcsny.com/sitemap.xml
+
+# Allow all major search engines and AI crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Block admin/config and customer booking RECORDS only.
+# NOTE: the public route landing pages live at /bookings/<route-name> (no file
+# extension) and MUST stay crawlable, so we block only the stored record files
+# (.json) and logs inside that path - not the folder itself.
+Disallow: /config/
+Disallow: /admin.php
+Disallow: /bookings/*.json$
+Disallow: /bookings.log
+Disallow: /*.log$

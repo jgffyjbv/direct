@@ -1,0 +1,1399 @@
+{
+  "featured_routes": [
+    {
+      "from": "Lakewood, NJ",
+      "to": "Brooklyn, NY",
+      "description": "Long distance travel\nComfortable highway journey"
+    },
+    {
+      "from": "Brooklyn",
+      "to": "Monsey",
+      "description": "Regular community route\nFrequent daily trips"
+    },
+    {
+      "from": "Monsey",
+      "to": "Newark Airport",
+      "description": "JFK, LaGuardia, or Newark\nReliable airport transfers"
+    }
+  ],
+  "vehicle_types": {
+    "full_size_car": {
+      "name": "Full Size Car",
+      "capacity": 5,
+      "description": "4 passengers"
+    },
+    "standard_suv": {
+      "name": "Standard SUV",
+      "capacity": 7,
+      "description": "6 passengers"
+    },
+    "full_size_suv": {
+      "name": "Full Size/Premium SUV",
+      "capacity": 8,
+      "description": "7/8 passengers"
+    },
+    "minivan": {
+      "name": "Minivan",
+      "capacity": 7,
+      "description": "7/8 passengers"
+    },
+    "sprinter": {
+      "name": "Mercedes Benz Sprinter",
+      "capacity": 14,
+      "description": "Large group"
+    }
+  },
+  "routes": [
+    {
+      "from": "Monsey, NY",
+      "to": "Baltimore, MD",
+      "category": "long-distance",
+      "pricing": {
+        "full_size_car": 425,
+        "standard_suv": 475,
+        "full_size_suv": 525,
+        "minivan": 465,
+        "sprinter": null
+      }
+    },
+    {
+      "from": "Monsey / Spring Valley",
+      "to": "Washington Heights",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 120,
+        "standard_suv": 135,
+        "full_size_suv": 155,
+        "minivan": 125,
+        "sprinter": 240
+      }
+    },
+    {
+      "from": "Monroe / Kiryas Joel",
+      "to": "JFK Airport",
+      "category": "airports",
+      "pricing": {
+        "full_size_car": 210,
+        "standard_suv": 235,
+        "full_size_suv": 255,
+        "minivan": 230,
+        "sprinter": 475
+      }
+    },
+    {
+      "from": "Monsey / Spring Valley, NY",
+      "to": "Passaic / Clifton, NJ",
+      "category": "long-distance",
+      "pricing": {
+        "full_size_car": 80,
+        "standard_suv": 95,
+        "full_size_suv": 110,
+        "minivan": 90,
+        "sprinter": 200
+      }
+    },
+    {
+      "from": "American Dream Mall",
+      "to": "Monsey / Spring Valley, NY",
+      "category": "long-distance",
+      "pricing": {
+        "full_size_car": 80,
+        "standard_suv": 95,
+        "full_size_suv": 110,
+        "minivan": 100,
+        "sprinter": null
+      }
+    },
+    {
+      "from": "Monsey / Spring Valley",
+      "to": "American Dream Mall",
+      "category": "long-distance",
+      "pricing": {
+        "full_size_car": 80,
+        "standard_suv": 95,
+        "full_size_suv": 110,
+        "minivan": 100,
+        "sprinter": 200
+      }
+    },
+    {
+      "from": "Lakewood, NJ",
+      "to": "Brooklyn, NY",
+      "category": "long-distance",
+      "pricing": {
+        "full_size_car": 225,
+        "standard_suv": 240,
+        "full_size_suv": 260,
+        "minivan": 245,
+        "sprinter": 475
+      }
+    },
+    {
+      "from": "Brooklyn, NY",
+      "to": "Lakewood, NJ",
+      "category": "long-distance",
+      "pricing": {
+        "full_size_car": 225,
+        "standard_suv": 245,
+        "full_size_suv": 260,
+        "minivan": 245,
+        "sprinter": 475
+      }
+    },
+    {
+      "from": "Borough Park, Brooklyn",
+      "to": "Monticello",
+      "category": "long-distance",
+      "pricing": {
+        "full_size_car": 295,
+        "standard_suv": 325,
+        "full_size_suv": 375,
+        "minivan": 345,
+        "sprinter": 725
+      }
+    },
+    {
+      "from": "Catskills Mountains",
+      "to": "Montreal",
+      "category": "long-distance",
+      "pricing": {
+        "full_size_car": 800,
+        "standard_suv": 875,
+        "full_size_suv": 900,
+        "minivan": 825,
+        "sprinter": 1450
+      }
+    },
+    {
+      "from": "Williamsburg, Brooklyn",
+      "to": "EWR Newark Liberty International Airport",
+      "category": "airports",
+      "pricing": {
+        "full_size_car": 130,
+        "standard_suv": 145,
+        "full_size_suv": 160,
+        "minivan": 140,
+        "sprinter": 275
+      }
+    },
+    {
+      "from": "EWR Newark Liberty International Airport",
+      "to": "Borough Park, Brooklyn",
+      "category": "airports",
+      "pricing": {
+        "full_size_car": 120,
+        "standard_suv": 140,
+        "full_size_suv": 155,
+        "minivan": 130,
+        "sprinter": 260
+      }
+    },
+    {
+      "from": "Borough Park, Brooklyn",
+      "to": "EWR Newark Liberty International Airport",
+      "category": "airports",
+      "pricing": {
+        "full_size_car": 115,
+        "standard_suv": 135,
+        "full_size_suv": 145,
+        "minivan": 125,
+        "sprinter": 250
+      }
+    },
+    {
+      "from": "Borough Park, Brooklyn",
+      "to": "Williamsburg, Brooklyn",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 45,
+        "standard_suv": 50,
+        "full_size_suv": 60,
+        "minivan": 50,
+        "sprinter": 125
+      }
+    },
+    {
+      "from": "Monsey",
+      "to": "HPN Westchester Airport",
+      "category": "long-distance",
+      "pricing": {
+        "full_size_car": 95,
+        "standard_suv": 105,
+        "full_size_suv": 125,
+        "minivan": 110,
+        "sprinter": 225
+      }
+    },
+    {
+      "from": "Williamsburg, Brooklyn",
+      "to": "Borough Park, Brooklyn",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 45,
+        "standard_suv": 50,
+        "full_size_suv": 60,
+        "minivan": 50,
+        "sprinter": 125
+      }
+    },
+    {
+      "from": "Monsey, NY",
+      "to": "Albany, NY",
+      "category": "long-distance",
+      "pricing": {
+        "full_size_car": 245,
+        "standard_suv": 265,
+        "full_size_suv": 285,
+        "minivan": 250,
+        "sprinter": 425
+      }
+    },
+    {
+      "from": "Monsey",
+      "to": "Newark Airport",
+      "category": "airports",
+      "pricing": {
+        "full_size_car": 125,
+        "standard_suv": 145,
+        "full_size_suv": 160,
+        "minivan": 140,
+        "sprinter": 260
+      }
+    },
+    {
+      "from": "Monsey",
+      "to": "LaGuardia Airport",
+      "category": "airports",
+      "pricing": {
+        "full_size_car": 145,
+        "standard_suv": 160,
+        "full_size_suv": 180,
+        "minivan": 150,
+        "sprinter": 325
+      }
+    },
+    {
+      "from": "Monsey",
+      "to": "JFK Airport",
+      "category": "airports",
+      "pricing": {
+        "full_size_car": 165,
+        "standard_suv": 185,
+        "full_size_suv": 200,
+        "minivan": 180,
+        "sprinter": 380
+      }
+    },
+    {
+      "from": "Monsey",
+      "to": "Monroe (KJ)",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 55,
+        "standard_suv": 70,
+        "full_size_suv": 85,
+        "minivan": 65,
+        "sprinter": 140
+      }
+    },
+    {
+      "from": "Monsey",
+      "to": "Brooklyn, NY",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 170,
+        "standard_suv": 190,
+        "full_size_suv": 210,
+        "minivan": 180,
+        "sprinter": 380
+      }
+    },
+    {
+      "from": "Monsey",
+      "to": "Williamsburg, Brooklyn, NY",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 155,
+        "standard_suv": 175,
+        "full_size_suv": 190,
+        "minivan": 165,
+        "sprinter": 350
+      }
+    },
+    {
+      "from": "Monroe (KJ)",
+      "to": "Monsey",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 55,
+        "standard_suv": 70,
+        "full_size_suv": 85,
+        "minivan": 65,
+        "sprinter": 140
+      }
+    },
+    {
+      "from": "Monsey",
+      "to": "Lakewood / Toms River, NJ",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 190,
+        "standard_suv": 205,
+        "full_size_suv": 225,
+        "minivan": 210,
+        "sprinter": 425
+      }
+    },
+    {
+      "from": "Monsey",
+      "to": "Philadelphia, PA",
+      "category": "long-distance",
+      "pricing": {
+        "full_size_car": 265,
+        "standard_suv": 285,
+        "full_size_suv": 300,
+        "minivan": 275,
+        "sprinter": null
+      }
+    },
+    {
+      "from": "Williamsburg, Brooklyn",
+      "to": "Monsey",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 165,
+        "standard_suv": 180,
+        "full_size_suv": 190,
+        "minivan": 175,
+        "sprinter": 350
+      }
+    },
+    {
+      "from": "Monsey",
+      "to": "Montreal, Quebec",
+      "category": "long-distance",
+      "pricing": {
+        "full_size_car": 650,
+        "standard_suv": 700,
+        "full_size_suv": 800,
+        "minivan": 750,
+        "sprinter": 1300
+      }
+    },
+    {
+      "from": "Brooklyn",
+      "to": "Monsey",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 175,
+        "standard_suv": 185,
+        "full_size_suv": 220,
+        "minivan": 200,
+        "sprinter": 390
+      }
+    },
+    {
+      "from": "LaGuardia Airport",
+      "to": "Monsey",
+      "category": "airports",
+      "pricing": {
+        "full_size_car": 150,
+        "standard_suv": 160,
+        "full_size_suv": 180,
+        "minivan": 165,
+        "sprinter": 350
+      }
+    },
+    {
+      "from": "Newark Airport (EWR)",
+      "to": "Monsey",
+      "category": "airports",
+      "pricing": {
+        "full_size_car": 125,
+        "standard_suv": 140,
+        "full_size_suv": 160,
+        "minivan": 135,
+        "sprinter": 265
+      }
+    },
+    {
+      "from": "Monsey",
+      "to": "Passaic / Clifton, NJ",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 75,
+        "standard_suv": 85,
+        "full_size_suv": 100,
+        "minivan": 80,
+        "sprinter": 165
+      }
+    },
+    {
+      "from": "Monsey",
+      "to": "Liberty (Catskills)",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 170,
+        "standard_suv": 180,
+        "full_size_suv": 195,
+        "minivan": 185,
+        "sprinter": 350
+      }
+    },
+    {
+      "from": "NYC",
+      "to": "Montreal, QC",
+      "category": "long-distance",
+      "pricing": {
+        "full_size_car": 750,
+        "standard_suv": 800,
+        "full_size_suv": 850,
+        "minivan": 825,
+        "sprinter": 1400
+      }
+    },
+    {
+      "from": "Monsey",
+      "to": "Catskills Mountains",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 160,
+        "standard_suv": 175,
+        "full_size_suv": 185,
+        "minivan": 175,
+        "sprinter": 350
+      }
+    },
+    {
+      "from": "Monsey, NY",
+      "to": "Toronto, Ontario, Canada",
+      "category": "long-distance",
+      "pricing": {
+        "full_size_car": 900,
+        "standard_suv": 925,
+        "full_size_suv": 1000,
+        "minivan": 950,
+        "sprinter": 1650
+      }
+    },
+    {
+      "from": "Brooklyn",
+      "to": "Catskills Mountains",
+      "category": "long-distance",
+      "pricing": {
+        "full_size_car": 350,
+        "standard_suv": 370,
+        "full_size_suv": 400,
+        "minivan": 365,
+        "sprinter": 750
+      }
+    },
+    {
+      "from": "Catskills Mountains",
+      "to": "Brooklyn",
+      "category": "long-distance",
+      "pricing": {
+        "full_size_car": 350,
+        "standard_suv": 370,
+        "full_size_suv": 400,
+        "minivan": 365,
+        "sprinter": 750
+      }
+    },
+    {
+      "from": "Monsey",
+      "to": "Borough Park, Brooklyn",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 165,
+        "standard_suv": 185,
+        "full_size_suv": 200,
+        "minivan": 175,
+        "sprinter": 370
+      }
+    },
+    {
+      "from": "Borough Park, Brooklyn",
+      "to": "Monsey",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 165,
+        "standard_suv": 185,
+        "full_size_suv": 200,
+        "minivan": 175,
+        "sprinter": 370
+      }
+    },
+    {
+      "from": "Monsey",
+      "to": "Flatbush, Brooklyn",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 170,
+        "standard_suv": 190,
+        "full_size_suv": 205,
+        "minivan": 180,
+        "sprinter": 380
+      }
+    },
+    {
+      "from": "Flatbush, Brooklyn",
+      "to": "Monsey",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 170,
+        "standard_suv": 190,
+        "full_size_suv": 205,
+        "minivan": 180,
+        "sprinter": 380
+      }
+    },
+    {
+      "from": "Monsey",
+      "to": "Crown Heights, Brooklyn",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 165,
+        "standard_suv": 185,
+        "full_size_suv": 200,
+        "minivan": 175,
+        "sprinter": 365
+      }
+    },
+    {
+      "from": "Crown Heights, Brooklyn",
+      "to": "Monsey",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 165,
+        "standard_suv": 185,
+        "full_size_suv": 200,
+        "minivan": 175,
+        "sprinter": 365
+      }
+    },
+    {
+      "from": "Monsey",
+      "to": "Midwood, Brooklyn",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 170,
+        "standard_suv": 190,
+        "full_size_suv": 205,
+        "minivan": 180,
+        "sprinter": 380
+      }
+    },
+    {
+      "from": "Midwood, Brooklyn",
+      "to": "Monsey",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 170,
+        "standard_suv": 190,
+        "full_size_suv": 205,
+        "minivan": 180,
+        "sprinter": 380
+      }
+    },
+    {
+      "from": "Brooklyn",
+      "to": "Montreal, Quebec",
+      "category": "long-distance",
+      "pricing": {
+        "full_size_car": 700,
+        "standard_suv": 750,
+        "full_size_suv": 850,
+        "minivan": 800,
+        "sprinter": 1350
+      }
+    },
+    {
+      "from": "Montreal, Quebec",
+      "to": "Brooklyn",
+      "category": "long-distance",
+      "pricing": {
+        "full_size_car": 700,
+        "standard_suv": 750,
+        "full_size_suv": 850,
+        "minivan": 800,
+        "sprinter": 1350
+      }
+    },
+    {
+      "from": "Montreal, Quebec",
+      "to": "Monsey",
+      "category": "long-distance",
+      "pricing": {
+        "full_size_car": 650,
+        "standard_suv": 700,
+        "full_size_suv": 800,
+        "minivan": 750,
+        "sprinter": 1300
+      }
+    },
+    {
+      "from": "Lakewood, NJ",
+      "to": "Monsey",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 190,
+        "standard_suv": 205,
+        "full_size_suv": 225,
+        "minivan": 210,
+        "sprinter": 425
+      }
+    },
+    {
+      "from": "Lakewood, NJ",
+      "to": "Brooklyn",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 150,
+        "standard_suv": 170,
+        "full_size_suv": 185,
+        "minivan": 160,
+        "sprinter": 340
+      }
+    },
+    {
+      "from": "Brooklyn",
+      "to": "Lakewood, NJ",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 150,
+        "standard_suv": 170,
+        "full_size_suv": 185,
+        "minivan": 160,
+        "sprinter": 340
+      }
+    },
+    {
+      "from": "Monsey",
+      "to": "Manhattan, NYC",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 155,
+        "standard_suv": 175,
+        "full_size_suv": 190,
+        "minivan": 170,
+        "sprinter": 360
+      }
+    },
+    {
+      "from": "Williamsburg, Brooklyn",
+      "to": "Montreal, Quebec",
+      "category": "long-distance",
+      "pricing": {
+        "full_size_car": 700,
+        "standard_suv": 750,
+        "full_size_suv": 850,
+        "minivan": 800,
+        "sprinter": 1350
+      }
+    },
+    {
+      "from": "Borough Park, Brooklyn",
+      "to": "Montreal, Quebec",
+      "category": "long-distance",
+      "pricing": {
+        "full_size_car": 700,
+        "standard_suv": 750,
+        "full_size_suv": 850,
+        "minivan": 800,
+        "sprinter": 1350
+      }
+    },
+    {
+      "from": "Monsey",
+      "to": "Spring Valley, NY",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 25,
+        "standard_suv": 35,
+        "full_size_suv": 45,
+        "minivan": 35,
+        "sprinter": 80
+      }
+    },
+    {
+      "from": "Spring Valley, NY",
+      "to": "Monsey",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 25,
+        "standard_suv": 35,
+        "full_size_suv": 45,
+        "minivan": 35,
+        "sprinter": 80
+      }
+    },
+    {
+      "from": "Monsey",
+      "to": "New Square, NY",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 20,
+        "standard_suv": 30,
+        "full_size_suv": 40,
+        "minivan": 30,
+        "sprinter": 70
+      }
+    },
+    {
+      "from": "New Square, NY",
+      "to": "Monsey",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 20,
+        "standard_suv": 30,
+        "full_size_suv": 40,
+        "minivan": 30,
+        "sprinter": 70
+      }
+    },
+    {
+      "from": "Monsey",
+      "to": "Monticello, NY",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 160,
+        "standard_suv": 175,
+        "full_size_suv": 185,
+        "minivan": 175,
+        "sprinter": 350
+      }
+    },
+    {
+      "from": "Monticello, NY",
+      "to": "Monsey",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 160,
+        "standard_suv": 175,
+        "full_size_suv": 185,
+        "minivan": 175,
+        "sprinter": 350
+      }
+    },
+    {
+      "from": "Borough Park, Brooklyn",
+      "to": "Monticello, NY",
+      "category": "long-distance",
+      "pricing": {
+        "full_size_car": 295,
+        "standard_suv": 325,
+        "full_size_suv": 375,
+        "minivan": 345,
+        "sprinter": 725
+      }
+    },
+    {
+      "from": "Williamsburg, Brooklyn",
+      "to": "Monticello, NY",
+      "category": "long-distance",
+      "pricing": {
+        "full_size_car": 295,
+        "standard_suv": 325,
+        "full_size_suv": 375,
+        "minivan": 345,
+        "sprinter": 725
+      }
+    },
+    {
+      "from": "Monsey",
+      "to": "Liberty, NY",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 160,
+        "standard_suv": 175,
+        "full_size_suv": 185,
+        "minivan": 175,
+        "sprinter": 350
+      }
+    },
+    {
+      "from": "Liberty, NY",
+      "to": "Monsey",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 160,
+        "standard_suv": 175,
+        "full_size_suv": 185,
+        "minivan": 175,
+        "sprinter": 350
+      }
+    },
+    {
+      "from": "Borough Park, Brooklyn",
+      "to": "Liberty, NY",
+      "category": "long-distance",
+      "pricing": {
+        "full_size_car": 295,
+        "standard_suv": 325,
+        "full_size_suv": 375,
+        "minivan": 345,
+        "sprinter": 725
+      }
+    },
+    {
+      "from": "Williamsburg, Brooklyn",
+      "to": "Liberty, NY",
+      "category": "long-distance",
+      "pricing": {
+        "full_size_car": 295,
+        "standard_suv": 325,
+        "full_size_suv": 375,
+        "minivan": 345,
+        "sprinter": 725
+      }
+    },
+    {
+      "from": "Monsey",
+      "to": "Woodbourne, NY",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 160,
+        "standard_suv": 175,
+        "full_size_suv": 185,
+        "minivan": 175,
+        "sprinter": 350
+      }
+    },
+    {
+      "from": "Woodbourne, NY",
+      "to": "Monsey",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 160,
+        "standard_suv": 175,
+        "full_size_suv": 185,
+        "minivan": 175,
+        "sprinter": 350
+      }
+    },
+    {
+      "from": "Borough Park, Brooklyn",
+      "to": "Woodbourne, NY",
+      "category": "long-distance",
+      "pricing": {
+        "full_size_car": 295,
+        "standard_suv": 325,
+        "full_size_suv": 375,
+        "minivan": 345,
+        "sprinter": 725
+      }
+    },
+    {
+      "from": "Williamsburg, Brooklyn",
+      "to": "Woodbourne, NY",
+      "category": "long-distance",
+      "pricing": {
+        "full_size_car": 295,
+        "standard_suv": 325,
+        "full_size_suv": 375,
+        "minivan": 345,
+        "sprinter": 725
+      }
+    },
+    {
+      "from": "Monsey",
+      "to": "South Fallsburg, NY",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 160,
+        "standard_suv": 175,
+        "full_size_suv": 185,
+        "minivan": 175,
+        "sprinter": 350
+      }
+    },
+    {
+      "from": "South Fallsburg, NY",
+      "to": "Monsey",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 160,
+        "standard_suv": 175,
+        "full_size_suv": 185,
+        "minivan": 175,
+        "sprinter": 350
+      }
+    },
+    {
+      "from": "Borough Park, Brooklyn",
+      "to": "South Fallsburg, NY",
+      "category": "long-distance",
+      "pricing": {
+        "full_size_car": 295,
+        "standard_suv": 325,
+        "full_size_suv": 375,
+        "minivan": 345,
+        "sprinter": 725
+      }
+    },
+    {
+      "from": "Williamsburg, Brooklyn",
+      "to": "South Fallsburg, NY",
+      "category": "long-distance",
+      "pricing": {
+        "full_size_car": 295,
+        "standard_suv": 325,
+        "full_size_suv": 375,
+        "minivan": 345,
+        "sprinter": 725
+      }
+    },
+    {
+      "from": "Monsey",
+      "to": "Fallsburg, NY",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 160,
+        "standard_suv": 175,
+        "full_size_suv": 185,
+        "minivan": 175,
+        "sprinter": 350
+      }
+    },
+    {
+      "from": "Fallsburg, NY",
+      "to": "Monsey",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 160,
+        "standard_suv": 175,
+        "full_size_suv": 185,
+        "minivan": 175,
+        "sprinter": 350
+      }
+    },
+    {
+      "from": "Borough Park, Brooklyn",
+      "to": "Fallsburg, NY",
+      "category": "long-distance",
+      "pricing": {
+        "full_size_car": 295,
+        "standard_suv": 325,
+        "full_size_suv": 375,
+        "minivan": 345,
+        "sprinter": 725
+      }
+    },
+    {
+      "from": "Williamsburg, Brooklyn",
+      "to": "Fallsburg, NY",
+      "category": "long-distance",
+      "pricing": {
+        "full_size_car": 295,
+        "standard_suv": 325,
+        "full_size_suv": 375,
+        "minivan": 345,
+        "sprinter": 725
+      }
+    },
+    {
+      "from": "Monsey",
+      "to": "Swan Lake, NY",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 160,
+        "standard_suv": 175,
+        "full_size_suv": 185,
+        "minivan": 175,
+        "sprinter": 350
+      }
+    },
+    {
+      "from": "Swan Lake, NY",
+      "to": "Monsey",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 160,
+        "standard_suv": 175,
+        "full_size_suv": 185,
+        "minivan": 175,
+        "sprinter": 350
+      }
+    },
+    {
+      "from": "Borough Park, Brooklyn",
+      "to": "Swan Lake, NY",
+      "category": "long-distance",
+      "pricing": {
+        "full_size_car": 295,
+        "standard_suv": 325,
+        "full_size_suv": 375,
+        "minivan": 345,
+        "sprinter": 725
+      }
+    },
+    {
+      "from": "Williamsburg, Brooklyn",
+      "to": "Swan Lake, NY",
+      "category": "long-distance",
+      "pricing": {
+        "full_size_car": 295,
+        "standard_suv": 325,
+        "full_size_suv": 375,
+        "minivan": 345,
+        "sprinter": 725
+      }
+    },
+    {
+      "from": "Monsey",
+      "to": "Loch Sheldrake, NY",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 160,
+        "standard_suv": 175,
+        "full_size_suv": 185,
+        "minivan": 175,
+        "sprinter": 350
+      }
+    },
+    {
+      "from": "Loch Sheldrake, NY",
+      "to": "Monsey",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 160,
+        "standard_suv": 175,
+        "full_size_suv": 185,
+        "minivan": 175,
+        "sprinter": 350
+      }
+    },
+    {
+      "from": "Borough Park, Brooklyn",
+      "to": "Loch Sheldrake, NY",
+      "category": "long-distance",
+      "pricing": {
+        "full_size_car": 295,
+        "standard_suv": 325,
+        "full_size_suv": 375,
+        "minivan": 345,
+        "sprinter": 725
+      }
+    },
+    {
+      "from": "Williamsburg, Brooklyn",
+      "to": "Loch Sheldrake, NY",
+      "category": "long-distance",
+      "pricing": {
+        "full_size_car": 295,
+        "standard_suv": 325,
+        "full_size_suv": 375,
+        "minivan": 345,
+        "sprinter": 725
+      }
+    },
+    {
+      "from": "Monsey",
+      "to": "Mountaindale, NY",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 160,
+        "standard_suv": 175,
+        "full_size_suv": 185,
+        "minivan": 175,
+        "sprinter": 350
+      }
+    },
+    {
+      "from": "Mountaindale, NY",
+      "to": "Monsey",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 160,
+        "standard_suv": 175,
+        "full_size_suv": 185,
+        "minivan": 175,
+        "sprinter": 350
+      }
+    },
+    {
+      "from": "Borough Park, Brooklyn",
+      "to": "Mountaindale, NY",
+      "category": "long-distance",
+      "pricing": {
+        "full_size_car": 295,
+        "standard_suv": 325,
+        "full_size_suv": 375,
+        "minivan": 345,
+        "sprinter": 725
+      }
+    },
+    {
+      "from": "Williamsburg, Brooklyn",
+      "to": "Mountaindale, NY",
+      "category": "long-distance",
+      "pricing": {
+        "full_size_car": 295,
+        "standard_suv": 325,
+        "full_size_suv": 375,
+        "minivan": 345,
+        "sprinter": 725
+      }
+    },
+    {
+      "from": "Monsey",
+      "to": "Hurleyville, NY",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 160,
+        "standard_suv": 175,
+        "full_size_suv": 185,
+        "minivan": 175,
+        "sprinter": 350
+      }
+    },
+    {
+      "from": "Hurleyville, NY",
+      "to": "Monsey",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 160,
+        "standard_suv": 175,
+        "full_size_suv": 185,
+        "minivan": 175,
+        "sprinter": 350
+      }
+    },
+    {
+      "from": "Borough Park, Brooklyn",
+      "to": "Hurleyville, NY",
+      "category": "long-distance",
+      "pricing": {
+        "full_size_car": 295,
+        "standard_suv": 325,
+        "full_size_suv": 375,
+        "minivan": 345,
+        "sprinter": 725
+      }
+    },
+    {
+      "from": "Williamsburg, Brooklyn",
+      "to": "Hurleyville, NY",
+      "category": "long-distance",
+      "pricing": {
+        "full_size_car": 295,
+        "standard_suv": 325,
+        "full_size_suv": 375,
+        "minivan": 345,
+        "sprinter": 725
+      }
+    },
+    {
+      "from": "Monsey",
+      "to": "Ferndale, NY",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 160,
+        "standard_suv": 175,
+        "full_size_suv": 185,
+        "minivan": 175,
+        "sprinter": 350
+      }
+    },
+    {
+      "from": "Ferndale, NY",
+      "to": "Monsey",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 160,
+        "standard_suv": 175,
+        "full_size_suv": 185,
+        "minivan": 175,
+        "sprinter": 350
+      }
+    },
+    {
+      "from": "Borough Park, Brooklyn",
+      "to": "Ferndale, NY",
+      "category": "long-distance",
+      "pricing": {
+        "full_size_car": 295,
+        "standard_suv": 325,
+        "full_size_suv": 375,
+        "minivan": 345,
+        "sprinter": 725
+      }
+    },
+    {
+      "from": "Williamsburg, Brooklyn",
+      "to": "Ferndale, NY",
+      "category": "long-distance",
+      "pricing": {
+        "full_size_car": 295,
+        "standard_suv": 325,
+        "full_size_suv": 375,
+        "minivan": 345,
+        "sprinter": 725
+      }
+    },
+    {
+      "from": "Monsey",
+      "to": "Woodridge, NY",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 160,
+        "standard_suv": 175,
+        "full_size_suv": 185,
+        "minivan": 175,
+        "sprinter": 350
+      }
+    },
+    {
+      "from": "Woodridge, NY",
+      "to": "Monsey",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 160,
+        "standard_suv": 175,
+        "full_size_suv": 185,
+        "minivan": 175,
+        "sprinter": 350
+      }
+    },
+    {
+      "from": "Borough Park, Brooklyn",
+      "to": "Woodridge, NY",
+      "category": "long-distance",
+      "pricing": {
+        "full_size_car": 295,
+        "standard_suv": 325,
+        "full_size_suv": 375,
+        "minivan": 345,
+        "sprinter": 725
+      }
+    },
+    {
+      "from": "Williamsburg, Brooklyn",
+      "to": "Woodridge, NY",
+      "category": "long-distance",
+      "pricing": {
+        "full_size_car": 295,
+        "standard_suv": 325,
+        "full_size_suv": 375,
+        "minivan": 345,
+        "sprinter": 725
+      }
+    },
+    {
+      "from": "Monsey",
+      "to": "Kiamesha Lake, NY",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 160,
+        "standard_suv": 175,
+        "full_size_suv": 185,
+        "minivan": 175,
+        "sprinter": 350
+      }
+    },
+    {
+      "from": "Kiamesha Lake, NY",
+      "to": "Monsey",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 160,
+        "standard_suv": 175,
+        "full_size_suv": 185,
+        "minivan": 175,
+        "sprinter": 350
+      }
+    },
+    {
+      "from": "Borough Park, Brooklyn",
+      "to": "Kiamesha Lake, NY",
+      "category": "long-distance",
+      "pricing": {
+        "full_size_car": 295,
+        "standard_suv": 325,
+        "full_size_suv": 375,
+        "minivan": 345,
+        "sprinter": 725
+      }
+    },
+    {
+      "from": "Williamsburg, Brooklyn",
+      "to": "Kiamesha Lake, NY",
+      "category": "long-distance",
+      "pricing": {
+        "full_size_car": 295,
+        "standard_suv": 325,
+        "full_size_suv": 375,
+        "minivan": 345,
+        "sprinter": 725
+      }
+    },
+    {
+      "from": "Manhattan, NYC",
+      "to": "Monsey",
+      "category": "local",
+      "pricing": {
+        "full_size_car": 155,
+        "standard_suv": 175,
+        "full_size_suv": 190,
+        "minivan": 170,
+        "sprinter": 360
+      }
+    }
+  ],
+  "pricing_rules": {
+    "time_rate_per_hour": 75,
+    "rate_per_mile": 0.65,
+    "round_trip_multiplier": 1.35,
+    "vehicle_multipliers": {
+      "full_size_car": 1,
+      "standard_suv": 1.15,
+      "full_size_suv": 1.3,
+      "minivan": 1.2,
+      "sprinter": 1.8
+    },
+    "stop_fees": {
+      "short_stop": 5,
+      "one_hour_stop": 45
+    },
+    "surcharges": {
+      "late_hours": 30
+    },
+    "time_surcharges": {
+      "rush_hour": {
+        "multiplier": 1.6,
+        "times": [
+          "07:00-09:00",
+          "17:00-19:00"
+        ],
+        "days": [
+          "monday",
+          "tuesday",
+          "wednesday",
+          "thursday",
+          "friday"
+        ]
+      },
+      "late_night": {
+        "flat_fee": 35,
+        "times": [
+          "22:00-06:00"
+        ],
+        "days": [
+          "all"
+        ]
+      },
+      "weekend": {
+        "multiplier": 1.1,
+        "times": [
+          "all"
+        ],
+        "days": [
+          "saturday",
+          "sunday"
+        ]
+      }
+    },
+    "custom_rate_per_mile": 0
+  }
+}
