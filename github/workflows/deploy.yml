@@ -1,0 +1,27 @@
+name: Deploy to SiteGround
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  web-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get latest code
+        uses: actions/checkout@v4
+
+      - name: Deploy to SiteGround via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASS }}
+          protocol: ftps
+          port: 21
+          local-dir: ./
+          server-dir: ./public_html/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/.github/**
