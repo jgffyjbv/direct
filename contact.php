@@ -428,6 +428,7 @@ $tripType = htmlspecialchars($_GET['tripType'] ?? '', ENT_QUOTES);
             }
         }
     </style>
+    <link rel="stylesheet" href="premium.css?v=1">
 </head>
 <body>
     <header>

@@ -498,6 +498,7 @@ $bookingUrl = "/booking?pickup=" . urlencode($fromLocation) . "&dropoff=" . urle
             .pricing-grid { grid-template-columns: 1fr 1fr; }
         }
     </style>
+    <link rel="stylesheet" href="premium.css?v=1">
 </head>
 <body>
     <header>

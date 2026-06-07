@@ -1,0 +1,104 @@
+/* =====================================================================
+   Direct Car Service — Premium polish layer (additive, override-only)
+   Keeps the existing green (#4CAF50) + Poppins identity, adds depth,
+   smoother interactions and refined typography. Safe to remove anytime.
+   ===================================================================== */
+
+:root{
+  --dcs-green:#4CAF50;
+  --dcs-green-d:#388e3c;
+  --dcs-green-l:#81C784;
+  --dcs-ink:#2c3e50;
+}
+
+/* ---- Global rendering niceties ---- */
+html{ scroll-behavior:smooth; }
+body{
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  text-rendering:optimizeLegibility;
+}
+::selection{ background:rgba(76,175,80,.22); color:var(--dcs-ink); }
+
+/* ---- Refined scrollbar ---- */
+*{ scrollbar-color:var(--dcs-green) #eef1f3; }
+::-webkit-scrollbar{ width:12px; height:12px; }
+::-webkit-scrollbar-track{ background:#eef1f3; }
+::-webkit-scrollbar-thumb{
+  background:linear-gradient(180deg,var(--dcs-green),var(--dcs-green-d));
+  border-radius:12px; border:3px solid #eef1f3;
+}
+::-webkit-scrollbar-thumb:hover{ background:var(--dcs-green-d); }
+
+/* ---- Headings: tighter, more confident ---- */
+h1,h2,h3{ letter-spacing:-.4px; }
+.section-header h2{ position:relative; }
+.section-header h2::after{
+  content:""; display:block; width:64px; height:4px; margin:16px auto 0;
+  border-radius:4px; background:linear-gradient(90deg,var(--dcs-green),var(--dcs-green-l));
+}
+
+/* ---- Cards: softer layered depth + lift on hover ---- */
+.fleet-card,.about-card,.testimonial-card,.trip-card{
+  border-radius:18px;
+  border:1px solid rgba(44,62,80,.06);
+  box-shadow:0 10px 30px -14px rgba(44,62,80,.20), 0 4px 10px -6px rgba(44,62,80,.10);
+  transition:transform .35s cubic-bezier(.2,.7,.2,1), box-shadow .35s ease;
+  overflow:hidden;
+}
+.fleet-card:hover,.about-card:hover,.testimonial-card:hover,.trip-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 28px 52px -20px rgba(44,62,80,.32), 0 10px 22px -14px rgba(76,175,80,.28);
+}
+
+/* Image zoom inside media cards */
+.fleet-image img,.fleet-card img,.trip-card img{
+  transition:transform .6s cubic-bezier(.2,.7,.2,1);
+}
+.fleet-card:hover .fleet-image img,.fleet-card:hover img,.trip-card:hover img{
+  transform:scale(1.06);
+}
+
+/* ---- Buttons / CTAs: premium pill + lift + glow ---- */
+.btn-reserve,.btn-primary,.reserve-btn,.cta-secondary,.cta-white,
+.section-cta a,button[type="submit"],input[type="submit"]{
+  border-radius:50px !important;
+  letter-spacing:.3px;
+  transition:transform .25s ease, box-shadow .3s ease, filter .25s ease !important;
+  box-shadow:0 8px 20px -8px rgba(76,175,80,.45);
+}
+.btn-reserve:hover,.btn-primary:hover,.reserve-btn:hover,.cta-secondary:hover,
+.cta-white:hover,.section-cta a:hover,button[type="submit"]:hover,input[type="submit"]:hover{
+  transform:translateY(-3px);
+  box-shadow:0 16px 32px -12px rgba(76,175,80,.55);
+  filter:brightness(1.03);
+}
+.btn-reserve:active,.btn-primary:active,.reserve-btn:active,
+button[type="submit"]:active{ transform:translateY(-1px); }
+/* keep the white/secondary CTA shadow neutral so the glow reads right */
+.cta-white,.cta-secondary{ box-shadow:0 8px 20px -10px rgba(44,62,80,.30); }
+
+/* ---- Form fields: rounded + clear green focus ring ---- */
+.form-group input,.form-group select,.form-group textarea,
+input[type="text"],input[type="email"],input[type="tel"],
+input[type="date"],input[type="time"],input[type="number"],select,textarea{
+  border-radius:12px !important;
+  transition:border-color .2s ease, box-shadow .2s ease !important;
+}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus,
+input:focus,select:focus,textarea:focus{
+  outline:none !important;
+  border-color:var(--dcs-green) !important;
+  box-shadow:0 0 0 4px rgba(76,175,80,.16) !important;
+}
+
+/* ---- Footer links: subtle interactive accent ---- */
+.footer-section a{ transition:color .2s ease, padding-left .2s ease; }
+.footer-section a:hover{ color:var(--dcs-green-l); padding-left:4px; }
+
+/* ---- Contact / list items: gentle hover ---- */
+.contact-item{ transition:transform .25s ease; }
+.contact-item:hover{ transform:translateY(-2px); }
+
+/* ---- Price emphasis ---- */
+.price{ letter-spacing:-.5px; }

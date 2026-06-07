@@ -1114,6 +1114,7 @@ foreach (($routesData['featured_routes'] ?? []) as $featured) {
             color: white !important;
         }
     </style>
+    <link rel="stylesheet" href="premium.css?v=1">
 </head>
 <body>
     <header>
