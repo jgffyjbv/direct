@@ -1,7 +1,7 @@
 /* =====================================================================
    Direct Car Service — Premium polish layer (additive, override-only)
-   Keeps the existing green (#4CAF50) + Poppins identity, adds depth,
-   smoother interactions and refined typography. Safe to remove anytime.
+   Green (#4CAF50) brand base + GOLD accent CTAs for a luxury look and
+   high contrast on every background. Safe to remove anytime.
    ===================================================================== */
 
 :root{
@@ -9,6 +9,9 @@
   --dcs-green-d:#388e3c;
   --dcs-green-l:#81C784;
   --dcs-ink:#2c3e50;
+  --dcs-gold:#E8B53A;
+  --dcs-gold-d:#D4982A;
+  --dcs-gold-ink:#2a2214; /* dark text that sits on gold */
 }
 
 /* ---- Global rendering niceties ---- */
@@ -18,7 +21,7 @@ body{
   -moz-osx-font-smoothing:grayscale;
   text-rendering:optimizeLegibility;
 }
-::selection{ background:rgba(76,175,80,.22); color:var(--dcs-ink); }
+::selection{ background:rgba(232,181,58,.28); color:var(--dcs-ink); }
 
 /* ---- Refined scrollbar ---- */
 *{ scrollbar-color:var(--dcs-green) #eef1f3; }
@@ -30,28 +33,23 @@ body{
 }
 ::-webkit-scrollbar-thumb:hover{ background:var(--dcs-green-d); }
 
-/* ---- Headings: tighter, more confident ---- */
+/* ---- Headings ---- */
 h1,h2,h3{ letter-spacing:-.4px; }
-.section-header h2{ position:relative; }
+/* gold accent underline reads on light, green AND dark sections */
 .section-header h2::after{
-  content:""; display:block; width:64px; height:4px; margin:16px auto 0;
-  border-radius:4px; background:linear-gradient(90deg,var(--dcs-green),var(--dcs-green-l));
+  background:linear-gradient(90deg,var(--dcs-gold),var(--dcs-gold-d)) !important;
 }
 
 /* ---- Cards: softer layered depth + lift on hover ---- */
 .fleet-card,.about-card,.testimonial-card,.trip-card{
   border-radius:18px;
-  border:1px solid rgba(44,62,80,.06);
   box-shadow:0 10px 30px -14px rgba(44,62,80,.20), 0 4px 10px -6px rgba(44,62,80,.10);
   transition:transform .35s cubic-bezier(.2,.7,.2,1), box-shadow .35s ease;
-  overflow:hidden;
 }
 .fleet-card:hover,.about-card:hover,.testimonial-card:hover,.trip-card:hover{
   transform:translateY(-8px);
-  box-shadow:0 28px 52px -20px rgba(44,62,80,.32), 0 10px 22px -14px rgba(76,175,80,.28);
+  box-shadow:0 28px 52px -20px rgba(44,62,80,.32), 0 10px 22px -14px rgba(232,181,58,.30);
 }
-
-/* Image zoom inside media cards */
 .fleet-image img,.fleet-card img,.trip-card img{
   transition:transform .6s cubic-bezier(.2,.7,.2,1);
 }
@@ -59,26 +57,36 @@ h1,h2,h3{ letter-spacing:-.4px; }
   transform:scale(1.06);
 }
 
-/* ---- Buttons / CTAs: premium pill + lift + glow ---- */
+/* =====================================================================
+   GOLD CALL-TO-ACTION BUTTONS — visible on every background, upscale feel
+   Covers: header Reserve, quick-quote button, outline CTAs, form submits
+   ===================================================================== */
 .btn-reserve,.btn-primary,.reserve-btn,.cta-secondary,.cta-white,
 .section-cta a,button[type="submit"],input[type="submit"]{
+  background:linear-gradient(135deg,var(--dcs-gold),var(--dcs-gold-d)) !important;
+  color:var(--dcs-gold-ink) !important;
+  border:none !important;
   border-radius:50px !important;
+  font-weight:700 !important;
   letter-spacing:.3px;
+  box-shadow:0 10px 24px -10px rgba(212,152,42,.6) !important;
   transition:transform .25s ease, box-shadow .3s ease, filter .25s ease !important;
-  box-shadow:0 8px 20px -8px rgba(76,175,80,.45);
 }
+.btn-reserve *,.btn-primary *,.reserve-btn *,.cta-secondary *,.cta-white *,
+.section-cta a *{ color:var(--dcs-gold-ink) !important; }
+
 .btn-reserve:hover,.btn-primary:hover,.reserve-btn:hover,.cta-secondary:hover,
 .cta-white:hover,.section-cta a:hover,button[type="submit"]:hover,input[type="submit"]:hover{
-  transform:translateY(-3px);
-  box-shadow:0 16px 32px -12px rgba(76,175,80,.55);
-  filter:brightness(1.03);
+  background:linear-gradient(135deg,#f1c14e,#e0a82e) !important;
+  color:var(--dcs-gold-ink) !important;
+  transform:translateY(-3px) !important;
+  box-shadow:0 18px 34px -12px rgba(212,152,42,.7) !important;
+  filter:brightness(1.02);
 }
 .btn-reserve:active,.btn-primary:active,.reserve-btn:active,
-button[type="submit"]:active{ transform:translateY(-1px); }
-/* keep the white/secondary CTA shadow neutral so the glow reads right */
-.cta-white,.cta-secondary{ box-shadow:0 8px 20px -10px rgba(44,62,80,.30); }
+button[type="submit"]:active{ transform:translateY(-1px) !important; }
 
-/* ---- Form fields: rounded + clear green focus ring ---- */
+/* ---- Form fields: rounded + clear focus ring ---- */
 .form-group input,.form-group select,.form-group textarea,
 input[type="text"],input[type="email"],input[type="tel"],
 input[type="date"],input[type="time"],input[type="number"],select,textarea{
@@ -88,17 +96,17 @@ input[type="date"],input[type="time"],input[type="number"],select,textarea{
 .form-group input:focus,.form-group select:focus,.form-group textarea:focus,
 input:focus,select:focus,textarea:focus{
   outline:none !important;
-  border-color:var(--dcs-green) !important;
-  box-shadow:0 0 0 4px rgba(76,175,80,.16) !important;
+  border-color:var(--dcs-gold) !important;
+  box-shadow:0 0 0 4px rgba(232,181,58,.20) !important;
 }
 
-/* ---- Footer links: subtle interactive accent ---- */
+/* ---- Footer links ---- */
 .footer-section a{ transition:color .2s ease, padding-left .2s ease; }
-.footer-section a:hover{ color:var(--dcs-green-l); padding-left:4px; }
+.footer-section a:hover{ color:var(--dcs-gold) !important; padding-left:4px; }
 
-/* ---- Contact / list items: gentle hover ---- */
+/* ---- Contact list items ---- */
 .contact-item{ transition:transform .25s ease; }
 .contact-item:hover{ transform:translateY(-2px); }
 
-/* ---- Price emphasis ---- */
+/* ---- Price emphasis stays green (brand) ---- */
 .price{ letter-spacing:-.5px; }
